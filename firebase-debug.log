@@ -1,0 +1,21 @@
+[debug] [2021-12-12T20:40:40.971Z] ----------------------------------------------------------------------
+[debug] [2021-12-12T20:40:40.973Z] Command:       /Users/faogustavo/.asdf/installs/nodejs/16.9.1/bin/node /Users/faogustavo/.asdf/installs/nodejs/16.9.1/.npm/bin/firebase init
+[debug] [2021-12-12T20:40:40.973Z] CLI Version:   9.21.0
+[debug] [2021-12-12T20:40:40.973Z] Platform:      darwin
+[debug] [2021-12-12T20:40:40.973Z] Node Version:  v16.9.1
+[debug] [2021-12-12T20:40:40.974Z] Time:          Sun Dec 12 2021 17:40:40 GMT-0300 (Brasilia Standard Time)
+[debug] [2021-12-12T20:40:40.974Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-12T20:40:40.980Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-12T20:40:40.980Z] > authorizing via signed-in user (gustavo@touchlab.co)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/faogustavo/dev/github.com/faogustavo/KMMFleet
+

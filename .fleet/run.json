@@ -1,0 +1,73 @@
+{
+    "configurations": [
+        {
+            "type": "gradle",
+            "name": "Gradle Clean",
+            "tasks": ["clean"]
+        },
+        {
+            "type": "gradle",
+            "name": "Gradle Build",
+            "tasks": ["build"]
+        },
+        // KMM
+        // Shared
+        {
+            "type": "gradle",
+            "name": "Run shared Tests",
+            "tasks": [":shared:allTests"]
+        },
+        // Android
+        {
+            "type": "command",
+            "name": "Launch android app",
+            "program": "sh",
+            "args": [
+                ".fleet/android-build-and-run.sh"
+            ],
+        },
+        {
+            "type": "gradle",
+            "name": "Run Android Tests",
+            "tasks": [":androidApp:testDebugUnitTest"]
+        },
+        {
+            "type": "gradle",
+            "name": "Run Android Instrumented Tests",
+            "tasks": [":androidApp:connectedCheck"]
+        },
+        // iOS
+        {
+            "type": "command",
+            "name": "Pod Install",
+            "program": "pod",
+            "args": [
+                "install",
+                "--project-directory=iosApp/"
+            ],
+        },
+        {
+            "type": "command",
+            "name": "Launch iOS App",
+            "program": "sh",
+            "args": [
+                ".fleet/ios-build-and-run.sh"
+            ],
+        },
+        // Emulators
+        {
+            "type": "command",
+            "name": "Android Emulator",
+            "program": "sh",
+            "args": [
+                ".fleet/launch-android-emulator.sh"
+            ],
+        },
+        {
+            "type": "command",
+            "name": "Open iOS Simulator",
+            "program": "open",
+            "args": ["-a", "Simulator.app"]
+        }
+    ]
+}
